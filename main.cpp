@@ -1,37 +1,20 @@
-#include<iostream>
-#include<fstream>
+#include <iostream>
+#include <string>
 using namespace std;
-template<class T>
-class Arithmatic{
-private:
-  T a;
-  T b;
-public:
-  Arithmatic(T a, T b);
-  T add();
-  T sub();
-};
-template <class T>
-Arithmatic<T>::Arithmatic(T a, T b)
+
+int  fun(int n)
 {
-  this->a = a;
-  this->b = b;
+  static int a =0;
+  if(n>0)
+  {
+    
+    a++;
+    return fun(n-1)+a;
+
+  }
+  return 0;
+
 }
-template<class T>
-T Arithmatic<T>::add(){
-  T c;
-  c = a+b;
-  return c;
-}
-template<class T>
-T Arithmatic<T>::sub(){
-  T c;
-  c = a-b;
-  return c;
-}
-int main()
-{
-  Arithmatic <float> ar(12.5,6.7);
-  cout<< ar.add()<<endl;
-  cout<<ar.sub();
+int main() {
+  cout<<fun(5);
 }

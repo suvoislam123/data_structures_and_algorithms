@@ -1,0 +1,16 @@
+Linear Recursion: If function calling itself only one time then it is linear recursion.
+Tree Recursion : If a function calling itself multiple times then it is called tree recursion.  
+Types of Recursion
+1.Tail Recursion
+2.Head Recursion
+3.Tree Recursion
+4.Indirect Recursion
+5.Nested Recursion
+
+
+* Recursion in local variable behaviour and Recursion in static or global variable behaviour are different.
+1. Tail Recursion: if a recursion call is in last statement of a recursion function then it called tail recursion. Tail recursion doesn perform anything at all at returning time;
+
+2.Head Recursion: if a recursion call is in fast statement of a recursion function then it called head recursion.
+3. Tree Recursion: more than two recursion call
+4. Indirect Recursion : If the situation is like function A call function B and function B call function C and the finally C all function A then it is known as Indirect recursion.
