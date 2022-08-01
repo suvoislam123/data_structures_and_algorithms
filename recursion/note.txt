@@ -5,7 +5,7 @@ Types of Recursion
 2.Head Recursion
 3.Tree Recursion
 4.Indirect Recursion
-5.Nested Recursion
+5.Nested Recursion=>fn(fn(n-1)*n);
 
 
 * Recursion in local variable behaviour and Recursion in static or global variable behaviour are different.
