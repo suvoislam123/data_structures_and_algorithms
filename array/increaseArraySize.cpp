@@ -18,4 +18,3 @@ int main()
         printf("%d \n",p[i]);
     }
 }
-#kmvmkvmf
