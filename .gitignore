@@ -1,0 +1,7 @@
+#ignore all kind of files
+
+#except cpp  and c file
+!*.cpp
+!*.c
+!*.md
+
