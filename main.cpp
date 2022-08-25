@@ -1,20 +1,27 @@
 #include <iostream>
-#include <string>
 using namespace std;
-
-int  fun(int n)
+int fun(int n,  int k)
 {
-  static int a =0;
-  if(n>0)
+  
+  if(k>=n)
   {
-    
-    a++;
-    return fun(n-1)+a;
-
+    return k;
   }
-  return 0;
-
+  else if(k<n)
+  {
+    k++;
+    fun(n-k,k);
+  }
 }
 int main() {
-  cout<<fun(5);
+  int t,n;
+  cin>>t;
+  while (t>0)
+  {
+    cin>>n;
+    static int k=0;
+    cout<<fun(n,k)<<endl; 
+    t--;
+  }
+  
 }
