@@ -2,7 +2,6 @@
 using namespace std;
 int fun(int n,  int k)
 {
-  
   if(k>=n)
   {
     return k;
